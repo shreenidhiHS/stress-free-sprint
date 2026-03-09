@@ -3,11 +3,10 @@ import {
   BannerHero,
   PauseSection,
   AboutSection,
-  StressInWorkSection,
-  WhyStressReliefSection,
-  OneSmallStepSection,
-  AffirmationSection,
+  WhoIWorkWithSection,
   ServicesSection,
+  WhyChooseUsSection,
+  BenefitsSection,
   TestimonialsSection,
   ContactSection,
   Footer,
@@ -27,23 +26,20 @@ export default function Home() {
           <AboutSection />
         </AnimateOnScroll>
         <AnimateOnScroll>
-          <StressInWorkSection />
-        </AnimateOnScroll>
-        <AnimateOnScroll>
-          <WhyStressReliefSection />
-        </AnimateOnScroll>
-        <AnimateOnScroll>
-          <OneSmallStepSection />
-        </AnimateOnScroll>
-        <AnimateOnScroll>
-          <AffirmationSection />
+          <WhoIWorkWithSection />
         </AnimateOnScroll>
         <AnimateOnScroll>
           <ServicesSection />
         </AnimateOnScroll>
-        {/* <AnimateOnScroll>
+        <AnimateOnScroll>
+          <WhyChooseUsSection />
+        </AnimateOnScroll>
+        <AnimateOnScroll>
+          <BenefitsSection />
+        </AnimateOnScroll>
+        <AnimateOnScroll>
           <TestimonialsSection />
-        </AnimateOnScroll> */}
+        </AnimateOnScroll>
         <AnimateOnScroll>
           <ContactSection />
         </AnimateOnScroll>

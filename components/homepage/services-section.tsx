@@ -8,10 +8,13 @@ export function ServicesSection() {
     >
       <div className="mx-auto max-w-4xl">
         <h2 className="mb-10 text-center text-2xl font-semibold text-primary sm:text-3xl">
-          What I offer
+          Practical Solutions for Real-World Stress
         </h2>
-        <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {SERVICES.map(({ title, description }, i) => {
+        <ul className="grid gap-8 lg:grid-cols-3">
+          {SERVICES.map((service, i) => {
+            const { title, description } = service;
+            const list = "learn" in service ? service.learn : "outcomes" in service ? service.outcomes : service.benefits;
+            const listLabel = "learn" in service ? "You will learn" : "outcomes" in service ? "Key outcomes" : "Benefits";
             const borderColor = ["chart-1", "chart-2", "chart-3"][i];
             const textColor = ["chart-1", "chart-2", "chart-3"][i];
             return (
@@ -26,7 +29,7 @@ export function ServicesSection() {
                 }`}
               >
                 <h3
-                  className={`mb-2 font-semibold ${
+                  className={`mb-3 font-semibold ${
                     textColor === "chart-1"
                       ? "text-chart-1"
                       : textColor === "chart-2"
@@ -36,9 +39,20 @@ export function ServicesSection() {
                 >
                   {title}
                 </h3>
-                <p className="text-sm leading-relaxed text-muted-foreground">
+                <p className="mb-4 text-sm leading-relaxed text-muted-foreground">
                   {description}
                 </p>
+                <p className="mb-2 text-xs font-medium uppercase tracking-wide text-muted-foreground">
+                  {listLabel}
+                </p>
+                <ul className="space-y-1.5 text-sm text-muted-foreground">
+                  {list.map((item: string) => (
+                    <li key={item} className="flex gap-2">
+                      <span className="text-primary">•</span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
               </li>
             );
           })}

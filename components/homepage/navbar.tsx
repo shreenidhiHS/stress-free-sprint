@@ -18,7 +18,7 @@ export function Navbar() {
           onClick={() => setMenuOpen(false)}
         >
           <Image
-            src="/logo2_t.png"
+            src="/logo1.png"
             alt="Stress Free Sprint — Pause, Breath, Reset"
             width={220}
             height={56}

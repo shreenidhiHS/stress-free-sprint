@@ -10,7 +10,7 @@ export function Footer() {
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 sm:flex-row">
         <Link href="#home" className="shrink-0" aria-label="Stress Free Sprint home">
           <Image
-            src="/logo2_t.png"
+            src="/logo1.png"
             alt="Stress Free Sprint"
             width={180}
             height={46}

@@ -6,7 +6,10 @@ export function PauseSection() {
     >
       <div className="mx-auto max-w-2xl text-center">
         <p className="text-2xl font-medium tracking-wide text-primary/90 sm:text-3xl md:text-4xl">
-          Pause. Breathe. Reset.
+          PAUSE • BREATH • RESET
+        </p>
+        <p className="mt-4 text-muted-foreground">
+          Take a moment for yourself. This is your safe space.
         </p>
         <div className="mt-8 flex justify-center gap-2" aria-hidden>
           <span className="h-2 w-2 rounded-full bg-chart-3/60" />
